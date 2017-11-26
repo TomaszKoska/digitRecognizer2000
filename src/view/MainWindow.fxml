@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.canvas.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="MainAnchorPane" prefHeight="360.0" prefWidth="280.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="control.MainWindowController">
+   <children>
+      <Canvas fx:id="paintCanvas" height="280.0" onDragDone="#handlePaintCanvasDragged" onMouseDragged="#handlePaintCanvasDragged" onMousePressed="#handlePaintCanvasPressed" width="280.0" />
+      <Button fx:id="recognizeButton" layoutY="281.0" mnemonicParsing="false" onAction="#handleRecognizeButton" prefHeight="40.0" prefWidth="140.0" text="Recognize" />
+      <Label fx:id="outcomeLabel" alignment="CENTER" layoutX="140.0" layoutY="281.0" prefHeight="80.0" prefWidth="140.0" text="?" textAlignment="CENTER" textOverrun="CLIP" wrapText="true" />
+      <Button fx:id="clearButton" layoutY="321.0" mnemonicParsing="false" onAction="#handleClearButton" prefHeight="40.0" prefWidth="140.0" text="Clear" />
+   </children>
+</AnchorPane>
